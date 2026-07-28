@@ -84,10 +84,6 @@ img {
   width: 32px;
 }
 
-.menu-principal nav a.activo {
-  text-decoration: underline;
-}
-
 
 /* =======================
    SERVICIOS
@@ -164,6 +160,64 @@ img {
 }
 
 /* =======================
+   OPINIONES
+======================= */
+
+.opiniones {
+  padding: 80px 0;
+}
+
+.opiniones h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+
+.grid-opiniones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.opinion {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+
+  transition: .3s;
+}
+
+.opinion:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(var(--gold-rgb), .2);
+}
+
+.opinion h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.opinion h3 span {
+  color: #777;
+  font-size: .95rem;
+  font-weight: normal;
+}
+
+.estrellas {
+  color: var(--gold);
+  font-size: 1.2rem;
+  margin-bottom: 14px;
+  letter-spacing: 3px;
+}
+
+.opinion p {
+  color: #666;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* =======================
    TABLET
 ======================= */
 
@@ -185,7 +239,7 @@ img {
     margin-inline: auto;
   }
 
-  .menu-principal :checked ~ :is(nav, .boton) {
+  .menu-principal :checked~ :is(nav, .boton) {
     display: flex;
   }
 
@@ -218,5 +272,9 @@ img {
     width: 100%;
     text-align: center;
   }
+
+  .grid-opiniones {
+    grid-template-columns: 1fr;
+}
 
 }
