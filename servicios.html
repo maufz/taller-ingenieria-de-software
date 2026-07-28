@@ -5,29 +5,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Servicios | Las Gaviotas</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+
   <header class="menu-principal">
     <a href="">
       <img src="img/logo.svg" alt="Las Gaviotas" class="logo">
     </a>
 
     <label for="mobile-toggle" class="mobile-toggle-label">
-      <img src="img/icono-menu.svg" alt="">
+      <img src="img/icono-menu.svg" alt="Menú">
     </label>
-    <input type="checkbox" id="mobile-toggle" class="toggle">
 
-    </input>
+    <input type="checkbox" id="mobile-toggle" class="toggle">
 
     <nav>
       <a href="#inicio">Inicio</a>
       <a href="#habitaciones">Habitaciones</a>
-      <a href="#servicios">Servicios</a>
+      <a href="#servicios" class="activo">Servicios</a>
       <a href="#galeria">Galería</a>
       <a href="#opiniones">Opiniones</a>
       <a href="#contacto">Contacto</a>
@@ -35,81 +37,25 @@
 
     <a href="#" class="boton">Reservar</a>
   </header>
+
   <main>
+
     <section class="servicios contenedor" id="servicios">
+
       <h2>Nuestros Servicios</h2>
+
       <p class="subtitulo">
         Todo lo que necesitás para disfrutar de una estadía cómoda frente al mar.
       </p>
 
-      <div class="grid-servicios">
+      <div class="grid-servicios" id="listaServicios"></div>
 
-        <article class="servicio">
-          <img src="img/desayuno.jpg" alt="Desayuno y almuerzo">
-
-          <div class="info-servicio">
-            <h3>Desayuno y almuerzo</h3>
-            <p>Buffet variado incluido, servido en el salón principal.</p>
-          </div>
-        </article>
-
-        <article class="servicio">
-          <img src="img/wifi.jpg" alt="WiFi">
-
-          <div class="info-servicio">
-            <h3>WiFi</h3>
-            <p>Conexión gratuita de alta velocidad en todo el hotel.</p>
-          </div>
-        </article>
-
-        <article class="servicio">
-          <img src="img/piscina.jpg" alt="Piscina">
-
-          <div class="info-servicio">
-            <h3>Piscina</h3>
-            <p>Espacio ideal para relajarse durante la estadía.</p>
-          </div>
-        </article>
-
-        <article class="servicio">
-          <img src="img/parking.jpg" alt="Estacionamiento">
-
-          <div class="info-servicio">
-            <h3>Estacionamiento</h3>
-            <p>Estacionamiento privado para huéspedes.</p>
-          </div>
-        </article>
-
-        <article class="servicio">
-          <img src="img/traslado.jpg" alt="Traslados">
-
-          <div class="info-servicio">
-            <h3>Traslados</h3>
-            <p>Servicio de traslado desde y hacia el aeropuerto.</p>
-          </div>
-        </article>
-
-        <article class="servicio">
-          <img src="img/roomservice.jpg" alt="Servicio a la habitación">
-
-          <div class="info-servicio">
-            <h3>Servicio a la habitación</h3>
-            <p>Pedí lo que necesites sin salir de tu habitación.</p>
-          </div>
-        </article>
-
-        <article class="servicio">
-          <img src="img/recepcion.jpg" alt="Recepción">
-
-          <div class="info-servicio">
-            <h3>Recepción 24 horas</h3>
-            <p>Atención personalizada durante todo el día.</p>
-          </div>
-        </article>
-
-      </div>
     </section>
+
   </main>
+
+  <script src="src/core/servicios.js"></script>
+
 </body>
 
 </html>
