@@ -10,6 +10,7 @@
   --gold-2: #f7ca39;
 }
 
+
 body {
   font-family: "Inter", sans-serif;
   background-image: linear-gradient(rgba(var(--gold-rgb), 0.3), transparent 64px);
@@ -22,6 +23,7 @@ img {
 
 .contenedor {
   max-width: 1200px;
+  padding-inline: 1rem;
 }
 
 .menu-principal {
@@ -46,6 +48,9 @@ img {
   text-decoration: none;
   color: black;
   transition: transform 0.3s, box-shadow 0.4s;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
 }
 .boton:hover {
   transform: translateY(-2px);
@@ -97,3 +102,72 @@ img {
 @media screen and (max-width: 576px) {
 }
 
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* FORMULARIO */
+.dos-col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.tres-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 991px) {
+  .dos-col,
+  .tres-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+label, legend {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+input, select, textarea {
+  width: 100%;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  margin-bottom: 0;
+}
+
+body.pagina-reserva h1 {
+  margin-block: 32px;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 16px;
+}
+
+.checkbox {
+  display: inline-block;
+  padding: 4px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.checkbox:hover {
+  background-color: #ececec;
+}
+
+textarea {
+  resize: vertical;
+}
