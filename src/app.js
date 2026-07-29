@@ -12,6 +12,9 @@ const paginaReserva = async () => {
     const formData = new FormData(form);
     const data = Array.from(formData.entries()).reduce((prev, [key, value]) => ({...prev, [key]: value}), {});
     const result = await agregarReserva(data);
+    if (result) {
+      mostrarPopup("¡Reserva confirmada!");
+    }
     const reservas = await obtenerReservas();
     console.log(reservas);
   })

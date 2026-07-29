@@ -171,3 +171,33 @@ fieldset {
 textarea {
   resize: vertical;
 }
+
+.popup__backdrop {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(4px);
+  background-color: #ffffffaa;
+  display: none;
+}
+.popup {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.popup.show, .popup__backdrop.show {
+  display: block;
+}
+
+.popup .check {
+  font-size: 3rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
