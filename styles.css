@@ -375,35 +375,19 @@ textarea {
   position: relative;
   border-radius: 18px;
   overflow: hidden;
-  margin: 40px auto 80px;
-}
-
-.hero img:first-child {
-  width: 100%;
-  height: 650px;
-  object-fit: cover;
-}
-
-.hero-contenido {
-  position: absolute;
-  inset: 0;
+  margin: 16px 16px 80px 16px;
+  background-image: linear-gradient(transparent, rgba(0,0,0,0.7)), url(img/paginainicio.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh;
+  padding: 3rem 1rem;
 
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;   
-  align-items: center;
+  align-items: flex-end;
+  justify-content: center;
 
   text-align: center;
-  color: white;
-  padding: 80px 40px;
-
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.75) 0%,
-    rgba(0, 0, 0, 0.55) 25%,
-    rgba(0, 0, 0, 0.15) 55%,
-    transparent 75%
-  );
+  color: #fff;
 }
 
 .hero-logo {
@@ -414,7 +398,7 @@ textarea {
 .hero h1 {
   font-size: 4rem;
   margin-bottom: 20px;
-  text-shadow: 0 4px 12px rgba(0,0,0,.8);
+  /* text-shadow: 0 4px 12px rgba(0,0,0,.8); */
 }
 
 .hero p {
@@ -422,7 +406,7 @@ textarea {
   font-size: 1.25rem;
   line-height: 1.8;
   margin-bottom: 35px;
-  text-shadow: 0 2px 8px rgba(0,0,0,.9);
+  /* text-shadow: 0 2px 8px rgba(0,0,0,.9); */
 }
 
 .hero .boton {
