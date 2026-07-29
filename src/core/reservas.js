@@ -1,7 +1,6 @@
 const obtenerReservas = () => {
   const reservasLS = localStorage.getItem("reservas");
-  console.log(reservasLS)
-  const reservas = JSON.parse(reservasLS);
+  const reservas = reservasLS ? JSON.parse(reservasLS) : [];
   return reservas;
 }
 
@@ -16,7 +15,8 @@ const agregarReserva = async (reserva) => {
     guardarCambios(reservas);
     return true;
   }
-  catch {
+  catch(error) {
+    console.log(error);
     return false;
   }
 }

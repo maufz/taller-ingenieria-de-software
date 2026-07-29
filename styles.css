@@ -10,6 +10,7 @@
   --gold-2: #f7ca39;
 }
 
+
 body {
   font-family: "Inter", sans-serif;
   background-image: linear-gradient(rgba(var(--gold-rgb), 0.3), transparent 64px);
@@ -41,8 +42,25 @@ img {
   margin: 16px;
   border-radius: 12px;
   background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  gap: 24px;
+}
+
+.boton {
+  background-image: linear-gradient(to right, var(--gold), var(--gold-2));
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: black;
+  transition: transform 0.3s, box-shadow 0.4s;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+.boton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 16px rgba(var(--gold-rgb), 0.5);
 }
 
 .menu-principal nav {
@@ -529,4 +547,103 @@ textarea {
   .mapa iframe {
     height: 280px;
   }
+}
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* FORMULARIO */
+.dos-col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.tres-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 991px) {
+  .dos-col,
+  .tres-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+label, legend {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+input, select, textarea {
+  width: 100%;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  margin-bottom: 0;
+}
+
+body.pagina-reserva h1 {
+  margin-block: 32px;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 16px;
+}
+
+.checkbox {
+  display: inline-block;
+  padding: 4px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.checkbox:hover {
+  background-color: #ececec;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.popup__backdrop {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(4px);
+  background-color: #ffffffaa;
+  display: none;
+}
+.popup {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.popup.show, .popup__backdrop.show {
+  display: block;
+}
+
+.popup .check {
+  font-size: 3rem;
+  display: inline-block;
+  margin-bottom: 1rem;
 }
