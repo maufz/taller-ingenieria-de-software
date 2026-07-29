@@ -25,25 +25,6 @@ const opiniones = [
     }
 ];
 
-const contenedor = document.querySelector("#listaOpiniones");
-
-for (const opinion of opiniones) {
-
-    let estrellas = "";
-
-    for (let i = 0; i < opinion.estrellas; i++) {
-        estrellas += "★";
-    }
-
-    contenedor.innerHTML += `
-        <article class="opinion">
-            <h3>${opinion.nombre} <span>(${opinion.pais})</span></h3>
-
-            <div class="estrellas">
-                ${estrellas}
-            </div>
-
-            <p>"${opinion.comentario}"</p>
-        </article>
-    `;
+function obtenerOpiniones() {
+    return opiniones;
 }
