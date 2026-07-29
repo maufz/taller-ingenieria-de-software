@@ -390,20 +390,18 @@ textarea {
 
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;   
+  justify-content: flex-end;
   align-items: center;
 
   text-align: center;
   color: white;
   padding: 80px 40px;
 
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.75) 0%,
-    rgba(0, 0, 0, 0.55) 25%,
-    rgba(0, 0, 0, 0.15) 55%,
-    transparent 75%
-  );
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.75) 0%,
+      rgba(0, 0, 0, 0.55) 25%,
+      rgba(0, 0, 0, 0.15) 55%,
+      transparent 75%);
 }
 
 .hero-logo {
@@ -414,7 +412,7 @@ textarea {
 .hero h1 {
   font-size: 4rem;
   margin-bottom: 20px;
-  text-shadow: 0 4px 12px rgba(0,0,0,.8);
+  text-shadow: 0 4px 12px rgba(0, 0, 0, .8);
 }
 
 .hero p {
@@ -422,12 +420,67 @@ textarea {
   font-size: 1.25rem;
   line-height: 1.8;
   margin-bottom: 35px;
-  text-shadow: 0 2px 8px rgba(0,0,0,.9);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, .9);
 }
 
 .hero .boton {
   padding: 16px 36px;
   font-size: 1.1rem;
+}
+
+/* =======================
+   LISTADO RESERVAS
+======================= */
+
+.pagina-listado h1{
+    margin:40px 0;
+}
+
+#listaReservas{
+
+    display:grid;
+    gap:24px;
+    margin-bottom:60px;
+
+}
+
+.reserva{
+
+    background:white;
+    border-radius:16px;
+    padding:24px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.reserva h2{
+
+    margin-bottom:16px;
+    color:var(--gold);
+
+}
+
+.reserva p{
+
+    margin-bottom:8px;
+    line-height:1.5;
+
+}
+
+.reserva .boton{
+
+    margin-top:20px;
+
+}
+
+#mensajeSinReservas{
+
+    text-align:center;
+    font-size:1.2rem;
+    color:#666;
+    margin:60px 0;
+
 }
 
 /* =======================
@@ -474,6 +527,48 @@ textarea {
 .footer p {
   margin-bottom: 10px;
   line-height: 1.6;
+}
+
+/* =======================
+   LOGIN
+======================= */
+
+.login {
+  max-width: 500px;
+  margin: 80px auto;
+  padding: 40px;
+
+  background: #fff;
+  border-radius: 16px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+}
+
+.login h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login label {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.login .boton {
+  width: 100%;
+  margin-top: 12px;
+}
+
+#mensajeLogin {
+  text-align: center;
+  margin-top: 16px;
+  color: red;
 }
 
 /* =======================

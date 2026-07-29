@@ -36,20 +36,6 @@ const servicios = [
     }
 ];
 
-const listaServicios = document.querySelector("#listaServicios");
-
-for (const servicio of servicios) {
-
-    listaServicios.innerHTML += `
-        <article class="servicio">
-
-            <img src="${servicio.imagen}" alt="${servicio.nombre}">
-
-            <div class="info-servicio">
-                <h3>${servicio.nombre}</h3>
-                <p>${servicio.descripcion}</p>
-            </div>
-
-        </article>
-    `;
+function obtenerServicios() {
+    return servicios;
 }

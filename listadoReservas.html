@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Reservas | Las Gaviotas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="pagina-listado">
+
+    <header class="menu-principal">
+
+        <a href="index.html">
+            <img src="img/logo.svg" class="logo" alt="Las Gaviotas">
+        </a>
+
+        <a href="#" id="btnLogout" class="boton">
+            Cerrar sesión
+        </a>
+
+    </header>
+
+    <main class="contenedor">
+
+        <h1>Listado de reservas</h1>
+
+        <p id="mensajeSinReservas"></p>
+
+        <div id="listaReservas"></div>
+
+    </main>
+
+    <script src="src/core/reservas.js"></script>
+    <script src="src/app.js"></script>
+
+</body>
+
+</html>

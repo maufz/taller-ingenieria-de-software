@@ -104,21 +104,116 @@
         <label for="input-comentarios">
           Comentarios (opcional)
         </label>
-        <textarea id="input-comentarios" name="comentarios" rows="5"></textarea>
+        <input type="checkbox" id="mobile-toggle" class="toggle">
 
-        <div class="tres-col">
-          <div>
-            <label for="input-tarjeta-numero">Datos de la tarjeta (pago anticipado)</label>
-            <input type="text" id="input-tarjeta-numero" name="tarjeta_numero" required>
-          </div>
-          <div>
-            <label for="input-tarjeta-vencimiento">Vencimiento</label>
-            <input type="text" id="input-tarjeta-vencimiento" name="tarjeta_vencimiento" required>
-          </div>
-          <div>
-            <label for="input-tarjeta-cvv">cvv</label>
-            <input type="text" id="input-tarjeta-cvv" name="tarjeta_cvv" required>
-          </div>
+        </input>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="opiniones.html">Opiniones</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <a href="#" class="boton">Reservar</a>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <h1>Solicitá tu reserva</h1>
+
+            <form id="formReserva">
+                <div class="dos-col">
+                    <div>
+                        <label for="input-nombre">Nombre completo</label>
+                        <input type="text" id="input-nombre" name="nombre" required>
+                    </div>
+                    <div>
+                        <label for="input-telefono">Teléfono</label>
+                        <input type="text" id="input-telefono" name="telefono" required>
+                    </div>
+
+                    <div>
+                        <label for="input-email">Correo electrónico</label>
+                        <input type="email" id="input-email" name="email" required>
+                    </div>
+
+                    <div>
+                        <label for="select-habitacion">Tipo de habitación</label>
+                        <select id="select-habitacion" name="habitacion" required>
+                            <option value="standard">Standard</option>
+                            <option value="premium">Premium</option>
+                            <option value="luxury">Luxury</option>
+                            <option value="presidencial">Presidencial</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="input-huespedes">Cantidad de huespedes</label>
+                        <input type="number" id="input-huespedes" name="huespedes" required>
+                    </div>
+
+                    <div class="dos-col">
+                        <div>
+                            <label for="input-fecha-ingreso">Fecha ingreso</label>
+                            <input type="date" id="input-fecha-ingreso" name="fecha_ingreso" required>
+                        </div>
+                        <div>
+                            <label for="input-fecha-salida">Fecha salida</label>
+                            <input type="date" id="input-fecha-salida" name="fecha_salida" required>
+                        </div>
+                    </div>
+                </div>
+
+                <fieldset>
+                    <legend>Servicios adicionales (opcional)</legend>
+
+                    <label for="input-servicio-desayuno" class="checkbox">
+                        <input type="checkbox" id="input-servicio-desayuno" name="servicio_desayuno">
+                        Desayuno
+                    </label>
+
+                    <label for="input-servicio-traslado" class="checkbox">
+                        <input type="checkbox" id="input-servicio-traslado" name="servicio_traslado">
+                        Traslado
+                    </label>
+
+
+                    <label for="input-servicio-late-checkout" class="checkbox">
+                        <input type="checkbox" id="input-servicio-late-checkout" name="servicio_late_checkout">
+                        Late check-out
+                    </label>
+                </fieldset>
+
+                <label for="input-comentarios">
+                    Comentarios (opcional)
+                </label>
+                <textarea id="input-comentarios" name="comentarios" rows="5"></textarea>
+
+                <div class="tres-col">
+                    <div>
+                        <label for="input-tarjeta-numero">Datos de la tarjeta (pago anticipado)</label>
+                        <input type="text" id="input-tarjeta-numero" name="tarjeta_numero" required>
+                    </div>
+                    <div>
+                        <label for="input-tarjeta-vencimiento">Vencimiento</label>
+                        <input type="text" id="input-tarjeta-vencimiento" name="tarjeta_vencimiento" required>
+                    </div>
+                    <div>
+                        <label for="input-tarjeta-cvv">cvv</label>
+                        <input type="text" id="input-tarjeta-cvv" name="tarjeta_cvv" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="boton">Confirmar reserva</button>
+            </form>
+
+
+            <div class="popup__backdrop"></div>
+            <div class="popup">
+                <span class="check">✅</span>
+                <p></p>
+            </div>
         </div>
 
         <button type="submit" class="boton">Confirmar reserva</button>
@@ -137,9 +232,9 @@
 
   </footer>
 
-  <script src="src/popup.js"></script>
-  <script src="src/core/reservas.js"></script>
-  <script src="src/app.js"></script>
+    <script src="src/popup.js"></script>
+    <script src="src/core/reservas.js"></script>
+    <script src="src/app.js"></script>
 </body>
 
 </html>
