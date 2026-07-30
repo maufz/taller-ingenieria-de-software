@@ -117,3 +117,16 @@ function validarReserva(datos) {
 
   return "";
 }
+
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = {
+    obtenerReservas,
+    guardarCambios,
+    agregarReserva,
+    validarCantidadHuespedes,
+    validarFechas,
+    validarTelefono,
+    validarEmail,
+    validarReserva
+  };
+}
