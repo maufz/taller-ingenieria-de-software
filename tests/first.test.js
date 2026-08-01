@@ -1,3 +1,0 @@
-test("Works", () => {
-  expect(1).toBe(1);
-})

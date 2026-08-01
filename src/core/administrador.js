@@ -11,3 +11,10 @@ function validarLogin(usuario, password) {
         admin.password === password
     );
 }
+
+if (typeof module !== "undefined" && module.exports) {
+    module.exports = {
+        administradores,
+        validarLogin
+    };
+}

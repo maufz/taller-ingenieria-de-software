@@ -39,3 +39,10 @@ const servicios = [
 function obtenerServicios() {
     return servicios;
 }
+
+if (typeof module !== "undefined" && module.exports) {
+    module.exports = {
+        servicios,
+        obtenerServicios
+    };
+}

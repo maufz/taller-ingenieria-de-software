@@ -20,10 +20,8 @@ function iniciarSesion(e) {
         window.location.href = "listadoReservas.html";
 
     } else {
-
         document.querySelector("#mensajeLogin").textContent =
             "Usuario o contraseña incorrectos.";
-
     }
 }
 

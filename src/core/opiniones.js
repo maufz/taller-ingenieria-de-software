@@ -28,3 +28,10 @@ const opiniones = [
 function obtenerOpiniones() {
     return opiniones;
 }
+
+if (typeof module !== "undefined" && module.exports) {
+    module.exports = {
+        opiniones,
+        obtenerOpiniones
+    };
+}
